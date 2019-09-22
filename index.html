@@ -10,7 +10,6 @@
     <title>Dart Technical Documentation Page</title>
   </head>
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!-- 
       Hello Camper!
       For now, the test suite only works in Chrome! Please read the README below
@@ -19,100 +18,137 @@
       - The freeCodeCamp Team 
     -->
     <nav id="navbar">
-      <header>
-        <a
-          href="#Introduction"
-          class="nav-link"
-        >
-          Introduction
-        </a>
-        <a
-          href="#Hello_World"
-          class="nav-link"
-        >
-          Hello World
-        </a>
-        <a
-          href="#Variables"
-          class="nav-link"
-        >
-          Variables
-        </a>
-        <a
-          href="#Control_flow_statements"
-          class="nav-link"
-        >
-          Control flow statements
-        </a>
-        <a
-          href="#Functions"
-          class="nav-link"
-        >
-          Functions
-        </a>
-        <a
-          href="#Comments"
-          class="nav-link"
-        >
-          Comments
-        </a>
-        <a
-          href="#Imports"
-          class="nav-link"
-        >
-          Imports
-        </a>
-        <a
-          href="#Classes"
-          class="nav-link"
-        >
-          Classes
-        </a>
-        <a
-          href="#Inheritance"
-          class="nav-link"
-        >
-          Inheritance
-        </a>
-        <a
-          href="#Mixins"
-          class="nav-link"
-        >
-          Mixins
-        </a>
-        <a
-          href="#Interfaces_and_abstract_classes"
-          class="nav-link"
-        >
-          Interfaces and abstract classes
-        </a>
-        <a
-          href="#Async"
-          class="nav-link"
-        >
-          Async
-        </a>
-        <a
-          href="#Exceptions"
-          class="nav-link"
-        >
-          Exceptions
-        </a>
-        <a
-          href="#Other_topics"
-          class="nav-link"
-        >
-          Other topics
-        </a>
-        <a
-          href="#Reference"
-          class="nav-link"
-        >
-          Reference
-        </a>
+      <ul>
+        <li>
+          <header>
+            <h1>Dart Documentation</h1>
+          </header>
+        </li>
+        <li>
+          <a
+            href="#Introduction"
+            class="nav-link"
+          >
+            Introduction
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Hello_World"
+            class="nav-link"
+          >
+            Hello World
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Variables"
+            class="nav-link"
+          >
+            Variables
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Control_flow_statements"
+            class="nav-link"
+          >
+            Control flow statements
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Functions"
+            class="nav-link"
+          >
+            Functions
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Comments"
+            class="nav-link"
+          >
+            Comments
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Imports"
+            class="nav-link"
+          >
+            Imports
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Classes"
+            class="nav-link"
+          >
+            Classes
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Inheritance"
+            class="nav-link"
+          >
+            Inheritance
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Mixins"
+            class="nav-link"
+          >
+            Mixins
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Interfaces_and_abstract_classes"
+            class="nav-link"
+          >
+            Interfaces and abstract classes
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Async"
+            class="nav-link"
+          >
+            Async
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Exceptions"
+            class="nav-link"
+          >
+            Exceptions
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Other_topics"
+            class="nav-link"
+          >
+            Other topics
+          </a>
+        </li>
+        <li>
+          <a
+            href="#Reference"
+            class="nav-link"
+          >
+            Reference
+          </a>
+        </li>
+      </ul>
       </header>
     </nav>
     <main id="main-doc">
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
       <section
         class="main-section"
         id="Introduction"
@@ -200,9 +236,9 @@
           </p>
           <pre>
             <code>
-              void main() {
-                print('Hello, World!');
-              }
+  void main() {
+    print('Hello, World!');
+  }
             </code>
           </pre>
         </article>
@@ -221,14 +257,14 @@
           </p>
           <pre>
             <code>
-              var name = 'Voyager I';
-              var year = 1977;
-              var antennaDiameter = 3.7;
-              var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
-              var image = {
-                'tags': ['saturn'],
-                'url': '//path/to/saturn.jpg'
-              };
+var name = 'Voyager I';
+var year = 1977;
+var antennaDiameter = 3.7;
+var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+var image = {
+  'tags': ['saturn'],
+  'url': '//path/to/saturn.jpg'
+};
             </code>
           </pre>
           <p>
@@ -250,23 +286,23 @@
           </p>
           <pre>
             <code>
-              if (year >= 2001) {
-                print('21st century');
-              } else if (year >= 1901) {
-                print('20th century');
-              }
-              
-              for (var object in flybyObjects) {
-                print(object);
-              }
-              
-              for (int month = 1; month <= 12; month++) {
-                print(month);
-              }
-              
-              while (year < 2016) {
-                year += 1;
-              }
+  if (year >= 2001) {
+    print('21st century');
+  } else if (year >= 1901) {
+    print('20th century');
+  }
+  
+  for (var object in flybyObjects) {
+    print(object);
+  }
+  
+  for (int month = 1; month <= 12; month++) {
+    print(month);
+  }
+  
+  while (year < 2016) {
+    year += 1;
+  }
             </code>
           </pre>
           <p>
@@ -289,12 +325,12 @@
           </p>
           <pre>
             <code>
-              int fibonacci(int n) {
-                if (n == 0 || n == 1) return n;
-                return fibonacci(n - 1) + fibonacci(n - 2);
-              }
-              
-              var result = fibonacci(20);
+  int fibonacci(int n) {
+    if (n == 0 || n == 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  }
+  
+  var result = fibonacci(20);
             </code>
           </pre>
           <p>
@@ -304,7 +340,7 @@
           </p>
           <pre>
             <code>
-              flybyObjects.where((name) => name.contains('turn')).forEach(print);
+  flybyObjects.where((name) => name.contains('turn')).forEach(print);
             </code>
           </pre>
           <p>
@@ -329,13 +365,13 @@
           <p>Dart comments usually start with //.</p>
           <pre>
             <code>
-              // This is a normal, one-line comment.
+  // This is a normal, one-line comment.
 
-              /// This is a documentation comment, used to document libraries,
-              /// classes, and their members. Tools like IDEs and dartdoc treat
-              /// doc comments specially.
-              
-              /* Comments like these are also supported. */
+  /// This is a documentation comment, used to document libraries,
+  /// classes, and their members. Tools like IDEs and dartdoc treat
+  /// doc comments specially.
+  
+  /* Comments like these are also supported. */
             </code>
           </pre>
           <p>
@@ -354,14 +390,14 @@
           <p>To access APIs defined in other libraries, use import.</p>
           <pre>
             <code>
-              // Importing core libraries
-              import 'dart:math';
-              
-              // Importing libraries from external packages
-              import 'package:test/test.dart';
-              
-              // Importing files
-              import 'path/to/my_other_file.dart';
+  // Importing core libraries
+  import 'dart:math';
+  
+  // Importing libraries from external packages
+  import 'package:test/test.dart';
+  
+  // Importing files
+  import 'path/to/my_other_file.dart';
             </code>
           </pre>
           <p>
@@ -386,34 +422,34 @@
           </p>
           <pre>
             <code>
-              class Spacecraft {
-                String name;
-                DateTime launchDate;
-              
-                // Constructor, with syntactic sugar for assignment to members.
-                Spacecraft(this.name, this.launchDate) {
-                  // Initialization code goes here.
-                }
-              
-                // Named constructor that forwards to the default one.
-                Spacecraft.unlaunched(String name) : this(name, null);
-              
-                int get launchYear =>
-                    launchDate?.year; // read-only non-final property
-              
-                // Method.
-                void describe() {
-                  print('Spacecraft: $name');
-                  if (launchDate != null) {
-                    int years =
-                        DateTime.now().difference(launchDate).inDays ~/
-                            365;
-                    print('Launched: $launchYear ($years years ago)');
-                  } else {
-                    print('Unlaunched');
-                  }
-                }
-              }
+  class Spacecraft {
+    String name;
+    DateTime launchDate;
+  
+    // Constructor, with syntactic sugar for assignment to members.
+    Spacecraft(this.name, this.launchDate) {
+      // Initialization code goes here.
+    }
+  
+    // Named constructor that forwards to the default one.
+    Spacecraft.unlaunched(String name) : this(name, null);
+  
+    int get launchYear =>
+        launchDate?.year; // read-only non-final property
+  
+    // Method.
+    void describe() {
+      print('Spacecraft: $name');
+      if (launchDate != null) {
+        int years =
+            DateTime.now().difference(launchDate).inDays ~/
+                365;
+        print('Launched: $launchYear ($years years ago)');
+      } else {
+        print('Unlaunched');
+      }
+    }
+  }
             </code>
           </pre>
           <p>
@@ -421,11 +457,11 @@
           </p>
           <pre>
             <code>
-              var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
-              voyager.describe();
-              
-              var voyager3 = Spacecraft.unlaunched('Voyager III');
-              voyager3.describe();
+  var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
+  voyager.describe();
+  
+  var voyager3 = Spacecraft.unlaunched('Voyager III');
+  voyager3.describe();
             </code>
           </pre>
           <p>
@@ -446,11 +482,11 @@
           <p>Dart has single inheritance.</p>
           <pre>
             <code>
-              class Orbiter extends Spacecraft {
-                num altitude;
-                Orbiter(String name, DateTime launchDate, this.altitude)
-                    : super(name, launchDate);
-              }
+  class Orbiter extends Spacecraft {
+    num altitude;
+    Orbiter(String name, DateTime launchDate, this.altitude)
+        : super(name, launchDate);
+  }
             </code>
           </pre>
         </article>
@@ -473,12 +509,12 @@
           </p>
           <pre>
             <code>
-              class Piloted {
-                int astronauts = 1;
-                void describeCrew() {
-                  print('Number of astronauts: $astronauts');
-                }
-              }
+  class Piloted {
+    int astronauts = 1;
+    void describeCrew() {
+      print('Number of astronauts: $astronauts');
+    }
+  }
             </code>
           </pre>
           <p>
@@ -487,9 +523,9 @@
           </p>
           <pre>
             <code>
-              class PilotedCraft extends Spacecraft with Piloted {
-                // ···
-              }
+  class PilotedCraft extends Spacecraft with Piloted {
+    // ···
+  }
             </code>
           </pre>
           <p>
@@ -514,9 +550,9 @@
           </p>
           <pre>
             <code>
-              class MockSpaceship implements Spacecraft {
-                // ···
-              }
+  class MockSpaceship implements Spacecraft {
+    // ···
+  }
             </code>
           </pre>
           <p>Read more about implicit interfaces.</p>
@@ -527,15 +563,15 @@
           </p>
           <pre>
             <code>
-              abstract class Describable {
-                void describe();
-              
-                void describeWithEmphasis() {
-                  print('=========');
-                  describe();
-                  print('=========');
-                }
-              }
+  abstract class Describable {
+    void describe();
+  
+    void describeWithEmphasis() {
+      print('=========');
+      describe();
+      print('=========');
+    }
+  }
             </code>
           </pre>
           <p>
@@ -559,22 +595,22 @@
           </p>
           <pre>
             <code>
-              const oneSecond = Duration(seconds: 1);
-              // ···
-              Future<void> printWithDelay(String message) async {
-                await Future.delayed(oneSecond);
-                print(message);
-              }
+  const oneSecond = Duration(seconds: 1);
+  // ···
+  Future<void> printWithDelay(String message) async {
+    await Future.delayed(oneSecond);
+    print(message);
+  }
             </code>
           </pre>
           <p>The method above is equivalent to:</p>
           <pre>
             <code>
-              Future<void> printWithDelay(String message) {
-                return Future.delayed(oneSecond).then((_) {
-                  print(message);
-                });
-              }
+  Future<void> printWithDelay(String message) {
+    return Future.delayed(oneSecond).then((_) {
+      print(message);
+    });
+  }
             </code>
           </pre>
           <p>
@@ -583,23 +619,23 @@
           </p>
           <pre>
             <code>
-              Future<void> createDescriptions(Iterable<String> objects) async {
-                for (var object in objects) {
-                  try {
-                    var file = File('$object.txt');
-                    if (await file.exists()) {
-                      var modified = await file.lastModified();
-                      print(
-                          'File for $object already exists. It was modified on $modified.');
-                      continue;
-                    }
-                    await file.create();
-                    await file.writeAsString('Start describing $object in this file.');
-                  } on IOException catch (e) {
-                    print('Cannot create description for $object: $e');
-                  }
-                }
-              }
+  Future<void> createDescriptions(Iterable<String> objects) async {
+    for (var object in objects) {
+      try {
+        var file = File('$object.txt');
+        if (await file.exists()) {
+          var modified = await file.lastModified();
+          print(
+              'File for $object already exists. It was modified on $modified.');
+          continue;
+        }
+        await file.create();
+        await file.writeAsString('Start describing $object in this file.');
+      } on IOException catch (e) {
+        print('Cannot create description for $object: $e');
+      }
+    }
+  }
             </code>
           </pre>
           <p>
@@ -608,12 +644,12 @@
           </p>
           <pre>
             <code>
-              Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
-                for (var object in objects) {
-                  await Future.delayed(oneSecond);
-                  yield '${craft.name} flies by $object';
-                }
-              }
+  Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
+    for (var object in objects) {
+      await Future.delayed(oneSecond);
+      yield '${craft.name} flies by $object';
+    }
+  }
             </code>
           </pre>
           <p>
@@ -633,9 +669,9 @@
           <p>To raise an exception, use throw:</p>
           <pre>
             <code>
-              if (astronauts == 0) {
-                throw StateError('No astronauts.');
-              }
+  if (astronauts == 0) {
+    throw StateError('No astronauts.');
+  }
             </code>
           </pre>
           <p>
@@ -643,21 +679,21 @@
           </p>
           <pre>
             <code>
-              try {
-                for (var object in flybyObjects) {
-                  var description = await File('$object.txt').readAsString();
-                  print(description);
-                }
-              } on IOException catch (e) {
-                print('Could not describe object: $e');
-              } finally {
-                flybyObjects.clear();
-              }
+  try {
+    for (var object in flybyObjects) {
+      var description = await File('$object.txt').readAsString();
+      print(description);
+    }
+  } on IOException catch (e) {
+    print('Could not describe object: $e');
+  } finally {
+    flybyObjects.clear();
+  }
             </code>
           </pre>
           <p>
-              Note that the code above is asynchronous; try works for
-              both synchronous code and code in an async function.
+            Note that the code above is asynchronous; try works for
+            both synchronous code and code in an async function.
           </p>
           <p>
             Read more about exceptions, including stack traces, rethrow,
@@ -694,5 +730,18 @@
         </article>
       </section>
     </main>
+    <footer>
+      <p>
+        Developed by
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/maiconm"
+        >
+          Maicon Andraski
+        </a>
+        - 2019
+      </p>
+    </footer>
   </body>
 </html>

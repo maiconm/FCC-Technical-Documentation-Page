@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1060px) {
+  main { grid-area: main }
+  footer { grid-area: footer }
+  body {
+    display: grid;
+    grid-template-areas: "main main main"
+                         "main main main"
+                         "footer footer footer";
+  }
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1.3fr 5fr;
+  gap: 5px;
+  background-color: #12181b;
+}
+
+nav ul {
+  width: 13vw;
+  display: grid;
+  gap: 3vh;
+  position: fixed;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+a, body {
+  font-family: sans-serif;
+  color: aliceblue;
+}
+
+a {
+  font-size: 1.25rem;
+}
+
+pre {
+  overflow: auto;
+  background-color: #1d282e;
+  border-top-style: dashed;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  background-color: #172127;
+  border-top: 1px solid white;
+}
