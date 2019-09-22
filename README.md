@@ -9,7 +9,7 @@ You can use this project as reference to build your own.
 
 freeCodeCamp(🔥) project
 ----
-## Responsive Web Design Projects - Build a Survey Form
+## Responsive Web Design Projects - Build a Technical Documentation Page
 
 * **User Story #1:** I can see a `main` element with a corresponding `id="main-doc"`, which contains the page's main content (technical documentation).
 * **User Story #2:** Within the `#main-docelement`, I can see several `section` elements, each with a class of `main-section`. There should be a minimum of 5.
