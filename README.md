@@ -2,7 +2,7 @@
 
 Technical Documentatio Page project for FreeCodeCamp
 
-live demo 👉 coming soon
+live demo 👉 https://codepen.io/maiconm/pen/MWgZBpP
 
 **Author:** Maicon Andraski
 You can use this project as reference to build your own.
