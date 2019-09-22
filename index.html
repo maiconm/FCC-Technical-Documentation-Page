@@ -12,63 +12,580 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!-- 
-    Hello Camper!
-    For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-    - The freeCodeCamp Team 
+      Hello Camper!
+      For now, the test suite only works in Chrome! Please read the README below
+      in the JS Editor before beginning. Feel free to delete this message once
+      you have read it. Good luck and Happy Coding! 
+      - The freeCodeCamp Team 
     -->
+    <nav id="navbar">
+      <header>
+        <a href="#">test</a>
+      </header>
+    </nav>
     <main id="main-doc">
       <section
         class="main-section"
         id="Introduction"
       >
-        <header>Introduction</header>
+        <header>
+          <h2>Introduction</h2>
+        </header>
         <article>
           <p>
-            Dart is a client-optimized language for fast apps on any platform
+            Dart is a client-optimized language for fast apps on any
+            platform
           </p>
           <strong>Optimized for UI</strong>
           <ul>
-            <li>Develop with a programming language specialized around the needs of user interface creation</li>
-            <li>Mature and complete async-await for user interfaces containing event-driven code, paired with isolate-based concurrency</li>
-            <li>A programming language optimized for building user interfaces with features such as the spread operator for expanding collections, and collection if for customizing UI for each platform</li>
-            <li>A programming language that is easy to learn, with a familiar syntax</li>
+            <li>
+              Develop with a programming language specialized
+              around the needs of user interface creation
+            </li>
+            <li>
+              Mature and complete async-await for user interfaces
+              containing event-driven code, paired with isolate-based
+              concurrency
+            </li>
+            <li>A programming language optimized for building user
+              interfaces with features such as the spread operator
+              for expanding collections, and collection if for customizing
+              UI for each platform
+            </li>
+            <li>
+              A programming language that is easy to learn,
+              with a familiar syntax
+            </li>
           </ul>
           <strong>Productive development</strong>
           <ul>
-            <li>Make changes iteratively: use hot reload to see the result instantly in your running app</li>
-            <li>Make changes to your source code iteratively, using hot reload to instantly see the effect in the running app</li>
-            <li>Write code using a flexible type system with rich static analysis and powerful, configurable tooling</li>
-            <li>Do profiling, logging, and debugging with your code editor of choice</li>
+            <li>
+              Make changes iteratively: use hot reload to see the result
+              instantly in your running app
+            </li>
+            <li>
+              Make changes to your source code iteratively, using hot
+              reload to instantly see the effect in the running app
+            </li>
+            <li>
+              Write code using a flexible type system with rich static
+              analysis and powerful, configurable tooling
+            </li>
+            <li>
+              Do profiling, logging, and debugging with your code editor
+              of choice
+            </li>
           </ul>
           <strong>Fast on all platforms</strong>
           <ul>
-            <li>Compile to ARM & x64 machine code for mobile, desktop, and backend. Or compile to JavaScript for the web</li>
-            <li>AOT-compile apps to native machine code for instant startup</li>
-            <li>Target the web with complete, mature, fast compilers for JavaScript</li>
-            <li>Run backend code supporting your app, written using a single programming language</li>
+            <li>
+              Compile to ARM & x64 machine code for mobile, desktop,
+              and backend. Or compile to JavaScript for the web
+            </li>
+            <li>
+              AOT-compile apps to native machine code for instant startup
+            </li>
+            <li>
+              Target the web with complete, mature, fast compilers
+              for JavaScript
+            </li>
+            <li>
+              Run backend code supporting your app, written using a single
+              programming language
+            </li>
           </ul>
         </article>
       </section>
-      <section class="main-section">
-        <header>Know this before start with Dart</header>
+      <section
+        class="main-section"
+        id="Hello_World"
+      >
+        <header>
+          <h2>Hello World</h2>
+        </header>
         <article>
-          <ul>
-            <li>...</li>
-          </ul>
-            
+          <p>
+            Every app has a main() function. To display text on
+            the console, you can use the top-level
+            <code>print()</code>, function:
+          </p>
+          <pre>
+            <code>
+              void main() {
+                print('Hello, World!');
+              }
+            </code>
+          </pre>
         </article>
       </section>
-      <section class="main-section">
-        <header>Introduction</header>
-        <article>test</article>
+      <section
+        class="main-section"
+        id="Variables"
+      >
+        <header>
+          <h2>Variables</h2>
+        </header>
+        <article>
+          <p>
+              Even in type-safe Dart code, most variables don’t need
+              explicit types, thanks to type inference:
+          </p>
+          <pre>
+            <code>
+              var name = 'Voyager I';
+              var year = 1977;
+              var antennaDiameter = 3.7;
+              var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+              var image = {
+                'tags': ['saturn'],
+                'url': '//path/to/saturn.jpg'
+              };
+            </code>
+          </pre>
+          <p>
+            Read more about variables in Dart, including default values, the
+            final and const keywords, and static types.
+          </p>
+        </article>
       </section>
-      <section class="main-section">
-        <header>Introduction</header>
-        <article>test</article>
+      <section
+        class="main-section"
+        id="Control_flow_statements"
+      >
+        <header>
+          <h2>Control flow statements</h2>
+        </header>
+        <article>
+          <p>
+            Dart supports the usual control flow statements:
+          </p>
+          <pre>
+            <code>
+              if (year >= 2001) {
+                print('21st century');
+              } else if (year >= 1901) {
+                print('20th century');
+              }
+              
+              for (var object in flybyObjects) {
+                print(object);
+              }
+              
+              for (int month = 1; month <= 12; month++) {
+                print(month);
+              }
+              
+              while (year < 2016) {
+                year += 1;
+              }
+            </code>
+          </pre>
+          <p>
+            Read more about control flow statements in Dart, including break and
+            continue, switch and case, and assert.
+          </p>
+        </article>
       </section>
-      <section class="main-section">
-        <header>Introduction</header>
-        <article>test</article>
+      <section
+       class="main-section"
+       id="Functions"
+      >
+        <header>
+          <h2>Functions</h2>
+        </header>
+        <article>
+          <p>
+            We recommend specifying the types of each function’s arguments and
+            return value:
+          </p>
+          <pre>
+            <code>
+              int fibonacci(int n) {
+                if (n == 0 || n == 1) return n;
+                return fibonacci(n - 1) + fibonacci(n - 2);
+              }
+              
+              var result = fibonacci(20);
+            </code>
+          </pre>
+          <p>
+            A shorthand => (arrow) syntax is handy for functions that contain a
+            single statement. This syntax is especially useful when passing anonymous
+            functions as arguments:
+          </p>
+          <pre>
+            <code>
+              flybyObjects.where((name) => name.contains('turn')).forEach(print);
+            </code>
+          </pre>
+          <p>
+            Besides showing an anonymous function (the argument to where()), this
+            code shows that you can use a function as an argument: the top-level
+            print() function is an argument to forEach().
+          </p>
+          <p>
+            Read more about functions in Dart, including optional parameters,
+            default parameter values, and lexical scope.
+          </p>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Comments"
+      >
+        <header>
+          <h2>Comments</h2>
+        </header>
+        <article>
+          <p>Dart comments usually start with //.</p>
+          <pre>
+            <code>
+              // This is a normal, one-line comment.
+
+              /// This is a documentation comment, used to document libraries,
+              /// classes, and their members. Tools like IDEs and dartdoc treat
+              /// doc comments specially.
+              
+              /* Comments like these are also supported. */
+            </code>
+          </pre>
+          <p>
+            Read more about comments in Dart, including how the documentation tooling works.
+          </p>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Imports"
+      >
+        <header>
+          <h2>Imports</h2>
+        </header>
+        <article>
+          <p>To access APIs defined in other libraries, use import.</p>
+          <pre>
+            <code>
+              // Importing core libraries
+              import 'dart:math';
+              
+              // Importing libraries from external packages
+              import 'package:test/test.dart';
+              
+              // Importing files
+              import 'path/to/my_other_file.dart';
+            </code>
+          </pre>
+          <p>
+            Read more about libraries and visibility in Dart,
+            including library prefixes, show and hide, and lazy loading
+            through the deferred keyword.
+          </p>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Classes"
+      >
+        <header>
+          <h2>Classes</h2>
+        </header>
+        <article>
+          <p>
+            Here’s an example of a class with three properties, two
+            constructors, and a method. One of the properties can’t be set
+            directly, so it’s defined using a getter method (instead of a variable).
+          </p>
+          <pre>
+            <code>
+              class Spacecraft {
+                String name;
+                DateTime launchDate;
+              
+                // Constructor, with syntactic sugar for assignment to members.
+                Spacecraft(this.name, this.launchDate) {
+                  // Initialization code goes here.
+                }
+              
+                // Named constructor that forwards to the default one.
+                Spacecraft.unlaunched(String name) : this(name, null);
+              
+                int get launchYear =>
+                    launchDate?.year; // read-only non-final property
+              
+                // Method.
+                void describe() {
+                  print('Spacecraft: $name');
+                  if (launchDate != null) {
+                    int years =
+                        DateTime.now().difference(launchDate).inDays ~/
+                            365;
+                    print('Launched: $launchYear ($years years ago)');
+                  } else {
+                    print('Unlaunched');
+                  }
+                }
+              }
+            </code>
+          </pre>
+          <p>
+            You might use the Spacecraft class like this:
+          </p>
+          <pre>
+            <code>
+              var voyager = Spacecraft('Voyager I', DateTime(1977, 9, 5));
+              voyager.describe();
+              
+              var voyager3 = Spacecraft.unlaunched('Voyager III');
+              voyager3.describe();
+            </code>
+          </pre>
+          <p>
+            Read more about classes in Dart, including initializer lists,
+            optional new and const, redirecting constructors, factory
+            constructors, getters, setters, and much more.
+          </p>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Inheritance"
+      >
+        <header>
+          <h2>Inheritance</h2>
+        </header>
+        <article>
+          <p>Dart has single inheritance.</p>
+          <pre>
+            <code>
+              class Orbiter extends Spacecraft {
+                num altitude;
+                Orbiter(String name, DateTime launchDate, this.altitude)
+                    : super(name, launchDate);
+              }
+            </code>
+          </pre>
+        </article>
+        <p>
+          Read more about extending classes, the optional @override
+          annotation, and more.
+        </p>
+      </section>
+      <section
+        class="main-section"
+        id="Mixins"
+      >
+        <header>
+          <h2>Mixins</h2>
+        </header>
+        <article>
+          <p>
+            Mixins are a way of reusing code in multiple class hierarchies.
+            The following class can act as a mixin:
+          </p>
+          <pre>
+            <code>
+              class Piloted {
+                int astronauts = 1;
+                void describeCrew() {
+                  print('Number of astronauts: $astronauts');
+                }
+              }
+            </code>
+          </pre>
+          <p>
+            To add a mixin’s capabilities to a class, just extend the
+            class with the mixin.
+          </p>
+          <pre>
+            <code>
+              class PilotedCraft extends Spacecraft with Piloted {
+                // ···
+              }
+            </code>
+          </pre>
+          <p>
+            PilotedCraft now has the astronauts field as well
+            as the describeCrew() method.
+          </p>
+          <p>Read more about mixins.</p>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Interfaces_and_abstract_classes"
+      >
+        <header>
+          <h2>Interfaces and abstract classes</h2>
+        </header>
+        <article>
+          <p>
+            Dart has no interface keyword. Instead, all classes
+            implicitly define an interface. Therefore, you
+            can implement any class.
+          </p>
+          <pre>
+            <code>
+              class MockSpaceship implements Spacecraft {
+                // ···
+              }
+            </code>
+          </pre>
+          <p>Read more about implicit interfaces.</p>
+          <p>
+            You can create an abstract class to be extended
+            (or implemented) by a concrete class. Abstract classes
+            can contain abstract methods (with empty bodies).
+          </p>
+          <pre>
+            <code>
+              abstract class Describable {
+                void describe();
+              
+                void describeWithEmphasis() {
+                  print('=========');
+                  describe();
+                  print('=========');
+                }
+              }
+            </code>
+          </pre>
+          <p>
+            Any class extending Describable has the describeWithEmphasis()
+            method, which calls the extender’s implementation of describe().
+          </p>
+          <p>Read more about abstract classes and methods.</p>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Async"
+      >
+        <header>
+          <h2>Async</h2>
+        </header>
+        <article>
+          <p>
+            Avoid callback hell and make your code much more readable
+            by using async and await.
+          </p>
+          <pre>
+            <code>
+              const oneSecond = Duration(seconds: 1);
+              // ···
+              Future<void> printWithDelay(String message) async {
+                await Future.delayed(oneSecond);
+                print(message);
+              }
+            </code>
+          </pre>
+          <p>The method above is equivalent to:</p>
+          <pre>
+            <code>
+              Future<void> printWithDelay(String message) {
+                return Future.delayed(oneSecond).then((_) {
+                  print(message);
+                });
+              }
+            </code>
+          </pre>
+          <p>
+            As the next example shows, async and await help
+            make asynchronous code easy to read.
+          </p>
+          <pre>
+            <code>
+              Future<void> createDescriptions(Iterable<String> objects) async {
+                for (var object in objects) {
+                  try {
+                    var file = File('$object.txt');
+                    if (await file.exists()) {
+                      var modified = await file.lastModified();
+                      print(
+                          'File for $object already exists. It was modified on $modified.');
+                      continue;
+                    }
+                    await file.create();
+                    await file.writeAsString('Start describing $object in this file.');
+                  } on IOException catch (e) {
+                    print('Cannot create description for $object: $e');
+                  }
+                }
+              }
+            </code>
+          </pre>
+          <p>
+            You can also use async*, which gives you a nice, readable
+            way to build streams.
+          </p>
+          <pre>
+            <code>
+              Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
+                for (var object in objects) {
+                  await Future.delayed(oneSecond);
+                  yield '${craft.name} flies by $object';
+                }
+              }
+            </code>
+          </pre>
+          <p>
+            Read more about asynchrony support, including async functions,
+            Future, Stream, and the asynchronous loop (await for).
+          </p>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Exceptions"
+      >
+        <header>
+          <h2>Exceptions</h2>
+        </header>
+        <article>
+          <p>To raise an exception, use throw:</p>
+          <pre>
+            <code>
+              if (astronauts == 0) {
+                throw StateError('No astronauts.');
+              }
+            </code>
+          </pre>
+          <p>
+            To catch an exception, use a try statement with on or catch (or both):
+          </p>
+          <pre>
+            <code>
+              try {
+                for (var object in flybyObjects) {
+                  var description = await File('$object.txt').readAsString();
+                  print(description);
+                }
+              } on IOException catch (e) {
+                print('Could not describe object: $e');
+              } finally {
+                flybyObjects.clear();
+              }
+            </code>
+          </pre>
+          <p>
+              Note that the code above is asynchronous; try works for
+              both synchronous code and code in an async function.
+          </p>
+          <p>
+            Read more about exceptions, including stack traces, rethrow,
+            and the difference between Error and Exception.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Other_topics">
+        <header>
+          <h2>Other topics</h2>
+        </header>
+        <article>
+          <p>
+            Many more code samples are in the language tour and the library tour.
+            Also see the Dart API reference, which often contains examples.
+          </p>
+        </article>
       </section>
     </main>
   </body>
